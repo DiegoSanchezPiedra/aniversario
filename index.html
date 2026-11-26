@@ -48,7 +48,7 @@
           <div><dt>Vamos en</dt><dd>coche, los dos</dd></div>
         </dl>
         <div class="exlibris__actions">
-          <a class="btn btn--ink" href="https://www.google.com/maps/dir/?api=1&origin=Carrer%20Sant%20Fructu%C3%B3s%208C%2C%2017256%20Masos%20de%20Pals&destination=Platja%20d%27Aro&waypoints=Pals%2C%20Girona%7CBasses%20d%27en%20Coll%2C%20Pals%7CPeratallada%7CBegur%7CPlatja%20de%20Sa%20Tuna%2C%20Begur%7CCarrer%20Sant%20Fructu%C3%B3s%208C%2C%2017256%20Masos%20de%20Pals&travelmode=driving" target="_blank" rel="noopener"><svg class="ico"><use href="#i-route"/></svg>La ruta del día en Google Maps</a>
+          <a class="btn btn--ink" href="https://www.google.com/maps/dir/?api=1&origin=Carrer%20Sant%20Fructu%C3%B3s%208C%2C%2017256%20Masos%20de%20Pals&destination=Platja%20d%27Aro&waypoints=Pals%2C%20Girona%7CPeratallada%7CBegur%7CPlatja%20de%20Sa%20Tuna%2C%20Begur%7CCarrer%20Sant%20Fructu%C3%B3s%208C%2C%2017256%20Masos%20de%20Pals&travelmode=driving" target="_blank" rel="noopener"><svg class="ico"><use href="#i-route"/></svg>La ruta del día en Google Maps</a>
           <button class="btn btn--ghost" type="button" data-print><svg class="ico"><use href="#i-print"/></svg>Imprimir o guardar en PDF</button>
         </div>
       </div>
@@ -92,9 +92,30 @@
     <p class="chapter__note">Los tiempos de trayecto en coche no están calculados aquí: consultadlos en Google Maps esa misma mañana.</p>
   </section>
 
-  <!-- 1 · PALS -->
-  <article class="stop" id="pals" data-stop data-start="09:45" data-end="11:15" data-name="Pals">
-    <div class="stop__time"><time>09:45</time><span>–</span><time>11:15</time></div>
+  <!-- 1 · MUAY THAI -->
+  <article class="stop stop--training" id="muay-thai" data-stop data-start="09:00" data-end="10:30" data-name="Muay thai">
+    <div class="stop__time"><time>09:00</time><span>–</span><time>10:30</time></div>
+    <div class="plate" aria-hidden="true">
+      <span class="plate__num">90</span>
+      <span class="plate__unit">minutos</span>
+      <span class="plate__hand hand">los dos, en casa</span>
+    </div>
+    <div class="stop__text">
+      <h3 class="stop__title">Muay thai</h3>
+      <p class="stop__lead">Empezamos el día entrenando juntos, sin salir del alojamiento.</p>
+      <ul class="stop__list">
+        <li>Sesión de muay thai entre los dos.</li>
+        <li>Ducharnos y salir hacia Pals.</li>
+      </ul>
+      <ul class="maps">
+        <li><a href="https://www.google.com/maps/search/?api=1&query=Carrer%20Sant%20Fructu%C3%B3s%208C%2C%2017256%20Masos%20de%20Pals%2C%20Girona" target="_blank" rel="noopener"><svg class="ico"><use href="#i-pin"/></svg>Carrer Sant Fructuós, 8C · Masos de Pals</a></li>
+      </ul>
+    </div>
+  </article>
+
+  <!-- 2 · PALS -->
+  <article class="stop stop--flip" id="pals" data-stop data-start="11:00" data-end="12:15" data-name="Pals">
+    <div class="stop__time"><time>11:00</time><span>–</span><time>12:15</time></div>
     <figure class="mount mount--portrait">
       <div class="mount__frame">
         <img src="assets/img/pals-torre-de-les-hores.jpg" width="1050" height="1400" alt="La Torre de les Hores de Pals, torre redonda de piedra, vista desde abajo con el cielo azul" loading="lazy" decoding="async">
@@ -105,9 +126,9 @@
     </figure>
     <div class="stop__text">
       <h3 class="stop__title">Pals</h3>
-      <p class="stop__lead">Empezamos el día en el pueblo medieval de piedra, en lo alto de la colina.</p>
+      <p class="stop__lead">Después del entreno, el pueblo medieval de piedra, en lo alto de la colina.</p>
       <ul class="stop__list">
-        <li>Desayunar y recorrer el casco antiguo.</li>
+        <li>Desayunar con calma y recorrer el casco antiguo.</li>
         <li>Subir hasta la Torre de les Hores.</li>
         <li>Asomarnos al Mirador Josep Pla.</li>
       </ul>
@@ -119,33 +140,10 @@
     </div>
   </article>
 
-  <!-- 2 · ARROZALES -->
-  <article class="stop stop--flip" id="arrozales" data-stop data-start="11:15" data-end="12:00" data-name="Arrozales de Pals">
-    <div class="stop__time"><time>11:15</time><span>–</span><time>12:00</time></div>
-    <figure class="mount mount--wide">
-      <div class="mount__frame">
-        <img src="assets/img/arrozales-pals-montgri.jpg" width="1400" height="933" alt="Balsas y cañizares de los arrozales de Pals con la montaña del Montgrí al fondo" loading="lazy" decoding="async">
-        <span class="corner corner--tl"></span><span class="corner corner--tr"></span><span class="corner corner--bl"></span><span class="corner corner--br"></span>
-        <span class="glassine" aria-hidden="true"></span>
-      </div>
-      <figcaption class="hand">El Montgrí desde los arrozales</figcaption>
-    </figure>
-    <div class="stop__text">
-      <h3 class="stop__title">Arrozales de Pals</h3>
-      <p class="stop__lead">Un respiro llano entre el pueblo y la costa: agua, cañas y el Montgrí al fondo.</p>
-      <ul class="stop__list">
-        <li>Paseo corto por el entorno natural de Basses d’en Coll.</li>
-        <li>Disfrutar del paisaje y hacer fotografías.</li>
-      </ul>
-      <ul class="maps">
-        <li><a href="https://www.google.com/maps/search/?api=1&query=Basses%20d%27en%20Coll%2C%20Pals" target="_blank" rel="noopener"><svg class="ico"><use href="#i-pin"/></svg>Basses d’en Coll</a></li>
-      </ul>
-    </div>
-  </article>
 
   <!-- 3 · PERATALLADA -->
-  <article class="stop" id="peratallada" data-stop data-start="12:30" data-end="14:15" data-name="Peratallada">
-    <div class="stop__time"><time>12:30</time><span>–</span><time>14:15</time></div>
+  <article class="stop" id="peratallada" data-stop data-start="12:45" data-end="14:30" data-name="Peratallada">
+    <div class="stop__time"><time>12:45</time><span>–</span><time>14:30</time></div>
     <div class="spread">
       <figure class="mount mount--wide">
         <div class="mount__frame">
@@ -179,8 +177,8 @@
   </article>
 
   <!-- 4 · BEGUR -->
-  <article class="stop stop--flip" id="begur" data-stop data-start="15:00" data-end="16:00" data-name="Begur">
-    <div class="stop__time"><time>15:00</time><span>–</span><time>16:00</time></div>
+  <article class="stop stop--flip" id="begur" data-stop data-start="15:15" data-end="16:15" data-name="Begur">
+    <div class="stop__time"><time>15:15</time><span>–</span><time>16:15</time></div>
     <figure class="mount mount--wide">
       <div class="mount__frame">
         <img src="assets/img/begur-castillo.jpg" width="1400" height="788" alt="Tejados de Begur con el castillo en lo alto de la colina y un ciprés en primer plano" loading="lazy" decoding="async">
@@ -204,8 +202,8 @@
   </article>
 
   <!-- 5 · SA TUNA -->
-  <article class="stop" id="sa-tuna" data-stop data-start="16:15" data-end="17:30" data-name="Sa Tuna">
-    <div class="stop__time"><time>16:15</time><span>–</span><time>17:30</time></div>
+  <article class="stop" id="sa-tuna" data-stop data-start="16:30" data-end="17:30" data-name="Sa Tuna">
+    <div class="stop__time"><time>16:30</time><span>–</span><time>17:30</time></div>
     <figure class="mount mount--wide mount--hero">
       <div class="mount__frame">
         <img src="assets/img/sa-tuna.jpg" width="1400" height="933" alt="Cala de Sa Tuna, con casas blancas de pescadores sobre la playa y barcas varadas en la arena" loading="lazy" decoding="async">
@@ -301,7 +299,6 @@
       <p>Fotografías de Wikimedia Commons, usadas según sus licencias:</p>
       <ul>
         <li>Torre de les Hores: <a href="https://commons.wikimedia.org/wiki/File:22_Torre_de_les_Hores_(Pals).jpg" target="_blank" rel="noopener">Enric</a>, CC BY-SA 4.0</li>
-        <li>Arrozales de Pals: <a href="https://commons.wikimedia.org/wiki/File:El_Montgr%C3%AD_des_dels_arrossars_de_Pals.jpg" target="_blank" rel="noopener">PIPISTRELLUS Educació Ambiental</a>, CC BY-SA 3.0</li>
         <li>Calle de Peratallada: <a href="https://commons.wikimedia.org/wiki/File:Peratallada-forallac-8-2013_(6).JPG" target="_blank" rel="noopener">Alberto-g-rovi</a>, CC BY-SA 3.0</li>
         <li>Plaça de les Voltes: <a href="https://commons.wikimedia.org/wiki/File:Pla%C3%A7a_de_les_Voltes_(55524156348).jpg" target="_blank" rel="noopener">David Stanley</a>, CC BY 4.0</li>
         <li>Begur: <a href="https://commons.wikimedia.org/wiki/File:Poblaci%C3%B3_de_Begur_amb_el_castell_al_fons_-_panoramio.jpg" target="_blank" rel="noopener">klimmanet</a>, CC BY 3.0</li>

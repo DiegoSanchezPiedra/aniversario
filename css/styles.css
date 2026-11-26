@@ -462,6 +462,32 @@ a { color: inherit; text-underline-offset: .22em; text-decoration-thickness: 1px
 /* Pausa de la tarde: más silenciosa */
 .stop--quiet .mount { max-width: 560px; justify-self: end; }
 
+/* ---------- Muay thai: página sin foto, una placa grabada ---------- */
+.stop--training { grid-template-areas: "time time" "plate text"; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); }
+.plate {
+  grid-area: plate;
+  justify-self: center;
+  width: min(340px, 100%);
+  aspect-ratio: 1;
+  display: grid; place-content: center; justify-items: center;
+  border: 1px solid var(--gold);
+  outline: 1px solid rgba(201,160,90,.45); outline-offset: 6px;
+  background: radial-gradient(70% 70% at 50% 40%, rgba(255,250,240,.7), transparent 75%);
+  transform: rotate(-1.2deg);
+}
+.plate__num {
+  font-family: var(--f-display); font-weight: 500; font-variation-settings: var(--opsz);
+  font-size: clamp(5.5rem, 4rem + 6vw, 9rem); line-height: .9;
+  font-variant-numeric: lining-nums;
+  color: var(--cloth);
+}
+.plate__unit {
+  margin-top: .4em;
+  font-family: var(--f-body); font-weight: 500; text-transform: uppercase; letter-spacing: .28em; font-size: .85rem;
+  color: var(--gold-lo);
+}
+.plate__hand { margin-top: .7em; font-size: clamp(1.3rem, 1.1rem + .6vw, 1.6rem); color: var(--ink-soft); }
+
 /* ---------- Cena: tarjeta sobre tela ---------- */
 .stop--night::before { display: none; }
 .stop--night {
@@ -664,6 +690,8 @@ a { color: inherit; text-underline-offset: .22em; text-decoration-thickness: 1px
   .mount--portrait { max-width: 340px; }
   .stop--quiet .mount { justify-self: stretch; max-width: none; }
   .stop--night { grid-template-areas: "time" "card"; }
+  .stop--training { grid-template-areas: "time" "plate" "text"; }
+  .plate { width: min(240px, 70%); margin: 10px 0 6px; }
 }
 
 @media (max-width: 560px) {
@@ -744,6 +772,11 @@ a { color: inherit; text-underline-offset: .22em; text-decoration-thickness: 1px
   .maps a { border: 0; padding: 0; min-height: 0; background: none; font-size: 9pt; color: #5a1121; }
   .maps a::after { content: " (Google Maps)"; color: #777; }
   .stop--night { background: none; box-shadow: none; padding: 0; grid-template-columns: 1fr; grid-template-areas: "time" "card"; }
+  .stop--training { grid-template-areas: "time time" "plate text"; }
+  .plate { width: 30mm; transform: none; outline: 0; background: none; }
+  .plate__num { font-size: 30pt; }
+  .plate__unit { font-size: 7pt; }
+  .plate__hand { display: none; }
   .stop--night .stop__time { color: var(--gold-lo); border-color: var(--leaf-edge); }
   .menu-card { outline: .3mm solid #c9a05a; box-shadow: none; background: none; text-align: left; padding: 4mm 5mm; width: auto; justify-self: stretch; }
   .menu-card__name { margin: 2mm 0; font-size: 14pt; }
