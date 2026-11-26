@@ -470,6 +470,7 @@ a { color: inherit; text-underline-offset: .22em; text-decoration-thickness: 1px
   width: min(340px, 100%);
   aspect-ratio: 1;
   display: grid; place-content: center; justify-items: center;
+  padding: 16px;
   border: 1px solid var(--gold);
   outline: 1px solid rgba(201,160,90,.45); outline-offset: 6px;
   background: radial-gradient(70% 70% at 50% 40%, rgba(255,250,240,.7), transparent 75%);
@@ -773,7 +774,7 @@ a { color: inherit; text-underline-offset: .22em; text-decoration-thickness: 1px
   .maps a::after { content: " (Google Maps)"; color: #777; }
   .stop--night { background: none; box-shadow: none; padding: 0; grid-template-columns: 1fr; grid-template-areas: "time" "card"; }
   .stop--training { grid-template-areas: "time time" "plate text"; }
-  .plate { width: 30mm; transform: none; outline: 0; background: none; }
+  .plate { width: 30mm; padding: 3mm; transform: none; outline: 0; background: none; }
   .plate__num { font-size: 30pt; }
   .plate__unit { font-size: 7pt; }
   .plate__hand { display: none; }
